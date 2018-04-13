@@ -1,0 +1,31 @@
+{
+  "name": "clean-node",
+  "version": "1.0.0",
+  "description": "Simple project showing a clean node architecture",
+  "main": "index.js",
+  "scripts": {
+    "test": "export NODE_ENV=test || SET NODE_ENV=test && mocha specs/**/*.test.js",
+    "test-watch": "nodemon --exec \"npm test\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pxai/clean-node.git"
+  },
+  "keywords": [
+    "clean",
+    "architecture",
+    "solid",
+    "node"
+  ],
+  "author": "Pello Altadill",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pxai/clean-node/issues"
+  },
+  "homepage": "https://github.com/pxai/clean-node#readme",
+  "dependencies": {
+    "dev": "^0.1.3",
+    "expect": "^22.4.3",
+    "mocha": "^5.0.5"
+  }
+}
