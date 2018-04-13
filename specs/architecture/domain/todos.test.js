@@ -25,6 +25,14 @@ describe('Testing todos, the todo list', () => {
     expect(todos.getById(todo._id)).toBe(todo);
   });
 
+  it('should return all elements', () => {
+    const todos = new Todos();
+    todos.add(new Todo());
+    todos.add(new Todo());
+    expect(todos.getAll().length).toBe(2);
+  });
+
+
   it('should return element by position', () => {
     const todos = new Todos();
     const todo = new Todo();

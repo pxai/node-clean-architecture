@@ -11,6 +11,9 @@ class Todos {
   add (todo) {
     this._todos.push(todo);
   }
+  getAll () {
+    return this._todos;
+  }
 
   get (index) {
     if (index < 0 || index > this._todos.length-1) return null;
