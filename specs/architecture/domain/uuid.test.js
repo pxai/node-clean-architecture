@@ -3,6 +3,7 @@ const expect = require('expect');
 
 describe('Simple uuid generator', () => {
   it('shoud generate correct uuid', () => {
-    expect(uuid()).toMatch(/[a-z0-9]{21}/);
+    const id = uuid();
+    expect(id).toMatch(/[a-z0-9]{20}/);
   });
 });

@@ -9,7 +9,7 @@ describe('Domain', ()=> {
   it ('should have a constructor todo class', () => {
     const todo = new Todo('Try this');
     expect(todo).toBeInstanceOf(Todo);
-    expect(todo.id).toMatch(/[a-z0-9]{21}/);
+    expect(todo.id).toMatch(/[a-z0-9]{20}/);
     expect(todo.task).toBe('Try this');
     expect(todo.isDone).toBe(false);
     expect(todo.created).toBeInstanceOf(Date);
@@ -19,7 +19,7 @@ describe('Domain', ()=> {
     const todo = new Todo('Try this');
     todo.task = 'Changed';
     todo.done();
-    expect(todo.id).toMatch(/[a-z0-9]{21}/);
+    expect(todo.id).toMatch(/[a-z0-9]{20}/);
     expect(todo.task).toBe('Changed');
     expect(todo.isDone).toBe(true);
     expect(todo.created.getTime()).toBeLessThanOrEqual(new Date().getTime());

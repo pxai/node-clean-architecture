@@ -4,7 +4,7 @@
   "description": "Simple project showing a clean node architecture",
   "main": "index.js",
   "scripts": {
-    "test": "export NODE_ENV=test || SET NODE_ENV=test && mocha specs/**/*.test.js",
+    "test": "export NODE_ENV=test || SET NODE_ENV=test && mocha specs/**/**/*.test.js",
     "test-watch": "nodemon --exec \"npm test\"",
     "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls"
   },
