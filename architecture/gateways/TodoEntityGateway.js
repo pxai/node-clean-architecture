@@ -1,5 +1,6 @@
 class TodoEntityGateway {
-  constructor () {}
+  constructor () {
+  }
 
   find(id) {}
 

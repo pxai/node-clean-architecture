@@ -1,6 +1,6 @@
 class GetTodosBoundary {
-  constructor () {
-
+  constructor (todosEntityGateway) {
+    this.todosEntityGateway = todosEntityGateway;
   }
 
   get () {
