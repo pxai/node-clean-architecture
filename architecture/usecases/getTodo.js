@@ -1,6 +1,6 @@
-const { GetTodosBoundary } = require('../boundaries/getTodosBoundary');
+const { GetTodoBoundary } = require('../boundaries/getTodoBoundary');
 
-class GetTodo extends GetTodosBoundary {
+class GetTodo extends GetTodoBoundary {
   constructor(todosEntityGateway) {
     super(todosEntityGateway);
   }

@@ -8,7 +8,9 @@ class TodoEntityDAO extends TodoEntityGateway {
       this.todos = todosDB;
   }
 
-  find(id) {}
+  find(id) {
+    return this.todos.filter(t => t.id === id)[0];
+  }
 
   findAll() {
     return  this.todos;
