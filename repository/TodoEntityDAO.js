@@ -22,7 +22,9 @@ class TodoEntityDAO extends TodoEntityGateway {
 
   update(todo) {}
 
-  remove(id) {}
+  remove(id) {
+    this.todos = this.todos.filter(t => t.id !== id);
+  }
 }
 
 module.exports = { TodoEntityDAO };
