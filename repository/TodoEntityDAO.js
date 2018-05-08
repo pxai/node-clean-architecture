@@ -16,7 +16,9 @@ class TodoEntityDAO extends TodoEntityGateway {
     return  this.todos;
   }
 
-  insert(todo) {}
+  insert(todo) {
+	this.todos.push(todo);
+  }
 
   update(todo) {}
 
