@@ -1,13 +1,13 @@
 const expect = require('expect')
-const { InsertTodo } = require('../../../architecture/usecases/insertTodo');
+const { GetTodo } = require('../../../architecture/usecases/getTodo');
 
 describe('GetTodo use case', () => {
   it('should exist', () => {
-    expect(InsertTodo).toBeDefined();
+    expect(GetTodo).toBeDefined();
   });
 
   it('should implement method', () => {
-    const insertTodo = new InsertTodo();
-    expect(insertTodo.insert).toBeDefined();
+    const getTodo = new GetTodo();
+    expect(getTodo.get).toBeDefined();
   })
 });
