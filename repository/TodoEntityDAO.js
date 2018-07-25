@@ -9,7 +9,7 @@ class TodoEntityDAO extends TodoEntityGateway {
   }
 
   find(id) {
-    return this.todos.filter(t => t.id === id)[0];
+    return this.todos.find(t => t.id === id);
   }
 
   findAll() {
@@ -17,10 +17,13 @@ class TodoEntityDAO extends TodoEntityGateway {
   }
 
   insert(todo) {
-	this.todos.push(todo);
+    this.todos.push(todo);
   }
 
-  update(todo) {}
+  update(todo) {
+    this.remove(todo.id);
+    this.todos.push(todo);
+  }
 
   remove(id) {
     this.todos = this.todos.filter(t => t.id !== id);
