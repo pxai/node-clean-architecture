@@ -1,5 +1,4 @@
 const { TodoEntityGateway } = require('../architecture/gateways/TodoEntityGateway');
-
 const todosDB = [];
 
 class TodoEntityDAO extends TodoEntityGateway {
